@@ -1,79 +1,84 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <title>Let's learn react native - Layout</title>
-    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reveal.css">
-    <link rel="stylesheet" href="./css/theme/black.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="./lib/css/zenburn.css">
+  <title>Let's see react native flex layout</title>
+  <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/reveal.css">
+  <link rel="stylesheet" href="./css/theme/black.css">
 
-    <!-- Printing and PDF exports -->
-    <script>
-      var link = document.createElement('link');
-      link.rel = 'stylesheet';
-      link.type = 'text/css';
-      link.href = window.location.search.match(/print-pdf/gi)
-        ? './css/print/pdf.css'
-        : './css/print/paper.css';
-      document.getElementsByTagName('head')[0].appendChild(link);
-    </script>
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="./lib/css/zenburn.css">
 
-    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
-    <style>
-      .background-black-font {
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi)
+      ? './css/print/pdf.css'
+      : './css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
 
-        padding-left: 10px;
-        padding-right: 10px;
-        background-color: #000000;
-      }
-      .round-box {
-        display: inline-block;
-        background-color: #cccccc;
-        color: #111111;
-        padding: 20px !important;
-        font-size: 20px !important;
-        width: 150px;
-      }
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <style>
+    .background-black-font {
 
-      table.table-25px {
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #000000;
+    }
 
-        font-size: 25px;
-        text-align: center;
-      }
+    .round-box {
+      display: inline-block;
+      background-color: #cccccc;
+      color: #111111;
+      padding: 20px !important;
+      font-size: 20px !important;
+      width: 150px;
+    }
 
-      table.table-25px td,
-      table.table-25px th {
+    table.table-25px {
 
-        text-align: center;
-      }
+      font-size: 25px;
+      text-align: center;
+    }
 
-      section h3 {
+    table.table-25px td,
+    table.table-25px th {
 
-         text-transform: none !important;
-      }
+      text-align: center;
+    }
 
-      section h5 {
+    section h3 {
 
-         text-transform: none !important;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="reveal">
-      <div class="slides">
-        <section>
-          <h3>React Native Layout</h3>
-        </section>
+      text-transform: none !important;
+    }
 
-        <section>
-          <h3>Flex Direction - <font color="orange">column(default)</font></h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+    section h5 {
+
+      text-transform: none !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h3>React Native Layout</h3>
+      </section>
+
+      <section>
+        <h3>Flex Direction -
+          <font color="orange">column(default)</font>
+        </h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -91,12 +96,14 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => FlexDirectionBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Flex Direction - <font color="orange">row</font></h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Flex Direction -
+          <font color="orange">row</font>
+        </h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -114,13 +121,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => FlexDirectionBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">flex-start</font></h3>
-          <h5>flex direction : <font color="orange">column</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">flex-start</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">column</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -144,13 +155,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">flex-start</font></h3>
-          <h5>flex direction : <font color="orange">row</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">flex-start</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">row</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -174,13 +189,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">flex-end</font></h3>
-          <h5>flex direction : <font color="orange">column</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">flex-end</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">column</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -204,13 +223,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">flex-end</font></h3>
-          <h5>flex direction : <font color="orange">row</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">flex-end</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">row</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -234,13 +257,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">center</font></h3>
-          <h5>flex direction : <font color="orange">column</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">center</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">column</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -264,13 +291,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">center</font></h3>
-          <h5>flex direction : <font color="orange">row</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">center</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">row</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -294,13 +325,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">space-between</font></h3>
-          <h5>flex direction : <font color="orange">column</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">space-between</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">column</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -324,13 +359,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">space-between</font></h3>
-          <h5>flex direction : <font color="orange">row</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">space-between</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">row</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -354,13 +393,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">space-around</font></h3>
-          <h5>flex direction : <font color="orange">column</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">space-around</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">column</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -384,13 +427,17 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Justify Content - <font color="orange">space-around</font></h3>
-          <h5>flex direction : <font color="orange">row</font></h5>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Justify Content -
+          <font color="orange">space-around</font>
+        </h3>
+        <h5>flex direction :
+          <font color="orange">row</font>
+        </h5>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -414,12 +461,14 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics)
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Align Items - <font color="orange">flex-start</font></h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Align Items -
+          <font color="orange">flex-start</font>
+        </h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -443,12 +492,14 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Align Items - <font color="orange">flex-end</font></h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Align Items -
+          <font color="orange">flex-end</font>
+        </h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -472,12 +523,14 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Align Items - <font color="orange">center</font></h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Align Items -
+          <font color="orange">center</font>
+        </h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -501,12 +554,14 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Align Items - <font color="orange">stretch</font></h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Align Items -
+          <font color="orange">stretch</font>
+        </h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -531,12 +586,12 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Align Self</h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Align Self</h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -562,12 +617,12 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => AlignSelfBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Position - absolute, relative(default)</h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Position - absolute, relative(default)</h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -594,12 +649,12 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => PositionBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Position - nested</h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Position - nested</h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -624,12 +679,12 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => PositionBasics);
           </script>
-        </section>
+      </section>
 
-        <section>
-          <h3>Position - zIndex</h3>
-          <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-          <script type="text/jsx">
+      <section>
+        <h3>Position - zIndex</h3>
+        <iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+        <script type="text/jsx">
             import React, { Component } from 'react';
             import { AppRegistry, View } from 'react-native';
 
@@ -650,36 +705,37 @@
 
             AppRegistry.registerComponent('AwesomeProject', () => PositionBasics);
           </script>
-        </section>
+      </section>
 
-      </div>
     </div>
+  </div>
 
-    <script src="./lib/js/head.min.js"></script>
-    <script src="./js/reveal.js"></script>
-    <script src="./js/react-native-web-player.js"></script>
-    <script>
-      // More info https://github.com/hakimel/reveal.js#configuration
-      Reveal.initialize({
-        history: true, width: 960, height: 900,
-        // More info https://github.com/hakimel/reveal.js#dependencies
-        dependencies: [
-          {
-            src: './plugin/markdown/marked.js'
-          }, {
-            src: './plugin/markdown/markdown.js'
-          }, {
-            src: './plugin/notes/notes.js',
-            async: true
-          }, {
-            src: './plugin/highlight/highlight.js',
-            async: true,
-            callback: function () {
-              hljs.initHighlightingOnLoad({});
-            }
+  <script src="./lib/js/head.min.js"></script>
+  <script src="./js/reveal.js"></script>
+  <script src="./js/react-native-web-player.js"></script>
+  <script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      history: true, width: 960, height: 900,
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      dependencies: [
+        {
+          src: './plugin/markdown/marked.js'
+        }, {
+          src: './plugin/markdown/markdown.js'
+        }, {
+          src: './plugin/notes/notes.js',
+          async: true
+        }, {
+          src: './plugin/highlight/highlight.js',
+          async: true,
+          callback: function () {
+            hljs.initHighlightingOnLoad({});
           }
-        ]
-      });
-    </script>
-  </body>
+        }
+      ]
+    });
+  </script>
+</body>
+
 </html>
