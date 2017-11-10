@@ -1,43 +1,35 @@
-(function(rv){
+(function(rv) {
+  var reactWebPlayerURL =
+    "https://cdn.rawgit.com/dabbott/react-native-web-player/gh-v1.10.0/index.html";
+  var loaded = {};
 
-	var reactWebPlayerURL = "http://cdn.rawgit.com/dabbott/react-native-web-player/gh-v1.9.1/index.html";
-	var loaded = {};
+  rv.addEventListener("slidechanged", function(event) {
+    var index = event.indexh + "-" + event.indexv;
 
-	rv.addEventListener('slidechanged', function (event) {
+    if (loaded[index]) {
+      return;
+    }
 
-		var index = event.indexh + '-' + event.indexv;
+    loaded[index] = true;
 
-		if(loaded[index]){
+    var slide = $(event.currentSlide);
+    var iframe = slide.children("iframe.react-native-web-player");
+    var source = slide.children("script");
 
-			return;
-		}
+    if (iframe.length == 0) {
+      return;
+    }
 
-		loaded[index] = true;
+    var code = "";
+    if (source.length > 0) {
+      code = source.text();
+    }
 
-		var slide = $(event.currentSlide);
-		var iframe = slide.children('iframe.react-native-web-player');
-		var source = slide.children('script');
+    code = code.replace(/^\n+/, "");
+    str = code.match(/^[\t\s]+/g)[0];
 
-		if(iframe.length == 0){
+    code = code.replace(new RegExp(str, "gi"), "");
 
-			return;
-		}
-
-		var code = '';
-		if(source.length > 0){
-
-			code = source.text();
-		}
-
-		code = code.replace(/^\n+/, "");
-		str = code.match(/^[\t\s]+/g)[0];
-
-		code = code.replace(new RegExp(str, 'gi') , "");
-
-		iframe.attr('src', reactWebPlayerURL + '#code=' + encodeURIComponent(code));
-
-		console.log("Source code was inserted", code);
-	});
-
-
-})(Reveal)
+    iframe.attr("src", reactWebPlayerURL + "#code=" + encodeURIComponent(code));
+  });
+})(Reveal);
