@@ -89,23 +89,19 @@
 				</h3>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-							import React from 'react';
-							import { AppRegistry, View } from 'react-native';
-				
-							class Example extends React.Component {
-							  render() {
-								return (
-								  <View style={{flex: 1, flexDirection: 'column'}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								  </View>
-								);
-							  }
-							};
-				
-							AppRegistry.registerComponent('AwesomeProject', () => Example);
-						  </script>
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						<View style={{flex: 1, flexDirection: 'column'}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
+				</script>
 			</section>
 			<section>
 				<h3>Justify Content -
@@ -116,202 +112,29 @@
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-								import React from 'react';
-								import { AppRegistry, View } from 'react-native';
-					
-								class Example extends React.Component {
-								  render() {
-									return (
-									  // Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-									  // Try setting `flexDirection` to `row`.
-									  <View style={{
-										flex: 1,
-										flexDirection: 'column',
-										justifyContent: 'flex-start',
-									  }}>
-										<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-									  </View>
-									);
-								  }
-								};
-					
-								AppRegistry.registerComponent('AwesomeProject', () => Example)
-							  </script>
-			</section>
-
-			<section>
-				<h3>Justify Content -
-					<font color="orange">flex-end</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">column</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-									import React from 'react';
-									import { AppRegistry, View } from 'react-native';
-
-									class Example extends React.Component {
-									  render() {
-										return (
-										  // Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-										  // Try setting `flexDirection` to `row`.
-										  <View style={{
-											flex: 1,
-											flexDirection: 'column',
-											justifyContent: 'flex-end',
-										  }}>
-											<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-											<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-											<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-										  </View>
-										);
-									  }
-									};
-						
-									AppRegistry.registerComponent('AwesomeProject', () => Example)
-								  </script>
-			</section>
-
-			<section>
-				<h3>Justify Content -
-					<font color="orange">center</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">column</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 		
-					class Example extends React.Component {
-						render() {
-							return (
-								// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-								// Try setting `flexDirection` to `row`.
-								<View style={{
-									flex: 1,
-									flexDirection: 'column',
-									justifyContent: 'center',
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
-		
-					AppRegistry.registerComponent('AwesomeProject', () => Example)
-				</script>
-			</section>
-			<section>
-				<h3>Justify Content -
-					<font color="orange">space-between</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">column</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-					import React from 'react';
-					import { AppRegistry, View } from 'react-native';
-
-					class Example extends React.Component {
-						render() {
-							return (
-								// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-								// Try setting `flexDirection` to `row`.
-								<View style={{
-									flex: 1,
-									flexDirection: 'column',
-									justifyContent: 'space-between',
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
-
-					AppRegistry.registerComponent('AwesomeProject', () => Example)
-				</script>
-			</section>
-
-			<section>
-				<h3>Justify Content -
-					<font color="orange">space-around</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">column</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-									import React from 'react';
-									import { AppRegistry, View } from 'react-native';
-						
-									class Example extends React.Component {
-									  render() {
-										return (
-										  // Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-										  // Try setting `flexDirection` to `row`.
-										  <View style={{
-											flex: 1,
-											flexDirection: 'column',
-											justifyContent: 'space-around',
-										  }}>
-											<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-											<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-											<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-										  </View>
-										);
-									  }
-									};
-						
-									AppRegistry.registerComponent('AwesomeProject', () => Example)
-								  </script>
-			</section>
-
-			<section>
-				<h3>Align Items -
-					<font color="orange">flex-start</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">column</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-				import React from 'react';
-				import { AppRegistry, View } from 'react-native';
-
-				class AlignItemsBasics extends React.Component {
-					render() {
-						return (
-						// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
 						<View style={{
 							flex: 1,
 							flexDirection: 'column',
-							justifyContent: 'center',
-							alignItems: 'flex-start'
+							justifyContent: 'flex-start',
 						}}>
 							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
 							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
 							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
 						</View>
-						);
-					}
-				};
-
-				AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
 				</script>
 			</section>
 
 			<section>
-				<h3>Align Items -
+				<h3>Justify Content -
 					<font color="orange">flex-end</font>
 				</h3>
 				<h5>flex direction :
@@ -319,33 +142,29 @@
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-								import React from 'react';
-								import { AppRegistry, View } from 'react-native';
-					
-								class AlignItemsBasics extends React.Component {
-								  render() {
-									return (
-									  // Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
-									  <View style={{
-										flex: 1,
-										flexDirection: 'column',
-										justifyContent: 'center',
-										alignItems: 'flex-end'
-									  }}>
-										<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-									  </View>
-									);
-								  }
-								};
-					
-								AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
-							  </script>
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'flex-end',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+	
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
 			</section>
 
 			<section>
-				<h3>Align Items -
+				<h3>Justify Content -
 					<font color="orange">center</font>
 				</h3>
 				<h5>flex direction :
@@ -353,227 +172,54 @@
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-								import React from 'react';
-								import { AppRegistry, View } from 'react-native';
-					
-								class AlignItemsBasics extends React.Component {
-								  render() {
-									return (
-									  // Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
-									  <View style={{
-										flex: 1,
-										flexDirection: 'column',
-										justifyContent: 'center',
-										alignItems: 'center'
-									  }}>
-										<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-									  </View>
-									);
-								  }
-								};
-					
-								AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
-							  </script>
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'center',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
 			</section>
-
-			<section>
-				<h3>Align Items -
-					<font color="orange">stretch</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">column</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-								import React from 'react';
-								import { AppRegistry, View } from 'react-native';
-					
-								class AlignItemsBasics extends React.Component {
-								  render() {
-									return (
-									  // Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
-									  // If you use stretch value in alignItems of parent, you must remove the width from properties
-									  <View style={{
-										flex: 1,
-										flexDirection: 'column',
-										justifyContent: 'center',
-										alignItems: 'stretch'
-									  }}>
-										<View style={{height: 50, backgroundColor: 'powderblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-										<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-									  </View>
-									);
-								  }
-								};
-					
-								AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
-							  </script>
-			</section>
-			<section>
-				<h3>Flex Direction -
-					<font color="orange">row</font>
-				</h3>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-							import React from 'react';
-							import { AppRegistry, View } from 'react-native';
-				
-							class Example extends React.Component {
-							  render() {
-								return (
-								  <View style={{flex: 1, flexDirection: 'row'}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								  </View>
-								);
-							  }
-							};
-				
-							AppRegistry.registerComponent('AwesomeProject', () => Example);
-						  </script>
-			</section>
-
-
-
-			<section>
-				<h3>Justify Content -
-					<font color="orange">flex-start</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">row</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-							import React from 'react';
-							import { AppRegistry, View } from 'react-native';
-				
-							class Example extends React.Component {
-								render() {
-									return (
-										// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-										// Try setting `flexDirection` to `row`.
-										<View style={{
-											flex: 1,
-											flexDirection: 'row',
-											justifyContent: 'flex-start',
-										}}>
-											<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-											<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-											<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-										</View>
-									);
-								}
-							};
-				
-							AppRegistry.registerComponent('AwesomeProject', () => Example)
-						  </script>
-			</section>
-
-			<section>
-				<h3>Justify Content -
-					<font color="orange">flex-end</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">row</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-							import React from 'react';
-							import { AppRegistry, View } from 'react-native';
-				
-							class Example extends React.Component {
-							  render() {
-								return (
-								  // Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-								  // Try setting `flexDirection` to `row`.
-								  <View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'flex-end',
-								  }}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								  </View>
-								);
-							  }
-							};
-				
-							AppRegistry.registerComponent('AwesomeProject', () => Example)
-						  </script>
-			</section>
-
-
-			<section>
-				<h3>Justify Content -
-					<font color="orange">center</font>
-				</h3>
-				<h5>flex direction :
-					<font color="orange">row</font>
-				</h5>
-				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
-				<script type="text/jsx">
-							import React from 'react';
-							import { AppRegistry, View } from 'react-native';
-				
-							class Example extends React.Component {
-							  render() {
-								return (
-								  // Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-								  // Try setting `flexDirection` to `row`.
-								  <View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'center',
-								  }}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								  </View>
-								);
-							  }
-							};
-				
-							AppRegistry.registerComponent('AwesomeProject', () => Example)
-						  </script>
-			</section>
-
 			<section>
 				<h3>Justify Content -
 					<font color="orange">space-between</font>
 				</h3>
 				<h5>flex direction :
-					<font color="orange">row</font>
+					<font color="orange">column</font>
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-							import React from 'react';
-							import { AppRegistry, View } from 'react-native';
-				
-							class Example extends React.Component {
-							  render() {
-								return (
-								  // Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-								  // Try setting `flexDirection` to `row`.
-								  <View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'space-between',
-								  }}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								  </View>
-								);
-							  }
-							};
-				
-							AppRegistry.registerComponent('AwesomeProject', () => Example)
-						  </script>
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'space-between',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
 			</section>
 
 			<section>
@@ -581,67 +227,58 @@
 					<font color="orange">space-around</font>
 				</h3>
 				<h5>flex direction :
-					<font color="orange">row</font>
+					<font color="orange">column</font>
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
-
-					class Example extends React.Component {
-						render() {
-							return (
-								// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
-								// Try setting `flexDirection` to `row`.
-								<View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'space-around',
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
-
+		
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'space-around',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
 					AppRegistry.registerComponent('AwesomeProject', () => Example)
 				</script>
 			</section>
-
 
 			<section>
 				<h3>Align Items -
 					<font color="orange">flex-start</font>
 				</h3>
 				<h5>flex direction :
-					<font color="orange">row</font>
+					<font color="orange">column</font>
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-					import React from 'react';
-					import { AppRegistry, View } from 'react-native';
+				import React from 'react';
+				import { AppRegistry, View } from 'react-native';
 
-					class AlignItemsBasics extends React.Component {
-						render() {
-							return (
-								// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
-								<View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'center',
-									alignItems: 'flex-start'
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
+				const Example = () => (
+					// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+					<View style={{
+						flex: 1,
+						flexDirection: 'column',
+						justifyContent: 'center',
+						alignItems: 'flex-start'
+					}}>
+						<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+						<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+						<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+					</View>
+				);
 
-					AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
+				AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
 			</section>
 
@@ -650,20 +287,18 @@
 					<font color="orange">flex-end</font>
 				</h3>
 				<h5>flex direction :
-					<font color="orange">row</font>
+					<font color="orange">column</font>
 				</h5>
 				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
 				<script type="text/jsx">
-				import React from 'react';
-				import { AppRegistry, View } from 'react-native';
-	
-				class AlignItemsBasics extends React.Component {
-					render() {
-					return (
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
 						// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
 						<View style={{
 							flex: 1,
-							flexDirection: 'row',
+							flexDirection: 'column',
 							justifyContent: 'center',
 							alignItems: 'flex-end'
 						}}>
@@ -672,10 +307,303 @@
 							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
 						</View>
 					);
-					}
-				};
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
+				</script>
+			</section>
+
+			<section>
+				<h3>Align Items -
+					<font color="orange">center</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">column</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+				import React from 'react';
+				import { AppRegistry, View } from 'react-native';
 	
-				AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
+				const Example = () => (
+					// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+					<View style={{
+						flex: 1,
+						flexDirection: 'column',
+						justifyContent: 'center',
+						alignItems: 'center'
+					}}>
+						<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+						<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+						<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+					</View>
+				);
+	
+				AppRegistry.registerComponent('AwesomeProject', () => Example);
+				</script>
+			</section>
+
+			<section>
+				<h3>Align Items -
+					<font color="orange">stretch</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">column</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+						// If you use stretch value in alignItems of parent, you must remove the width from properties
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'stretch'
+						}}>
+							<View style={{height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
+				</script>
+			</section>
+			<section>
+				<h3>Flex Direction -
+					<font color="orange">row</font>
+				</h3>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						<View style={{flex: 1, flexDirection: 'row'}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
+				</script>
+			</section>
+
+
+
+			<section>
+				<h3>Justify Content -
+					<font color="orange">flex-start</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'flex-start',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+					</script>
+			</section>
+
+			<section>
+				<h3>Justify Content -
+					<font color="orange">flex-end</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'flex-end',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
+			</section>
+
+
+			<section>
+				<h3>Justify Content -
+					<font color="orange">center</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'center',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+		
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
+			</section>
+
+			<section>
+				<h3>Justify Content -
+					<font color="orange">space-between</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+		
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'space-between',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+	
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
+			</section>
+
+			<section>
+				<h3>Justify Content -
+					<font color="orange">space-around</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+
+					const Example = () => (
+						// Try setting `justifyContent` enum('flex-start', 'flex-end', 'center', 'space-between', 'space-around')
+						// Try setting `flexDirection` to `row`.
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'space-around',
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+
+					AppRegistry.registerComponent('AwesomeProject', () => Example)
+				</script>
+			</section>
+
+
+			<section>
+				<h3>Align Items -
+					<font color="orange">flex-start</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+					import React from 'react';
+					import { AppRegistry, View } from 'react-native';
+
+					const Example = () => (
+						// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'center',
+							alignItems: 'flex-start'
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
+
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
+				</script>
+			</section>
+
+			<section>
+				<h3>Align Items -
+					<font color="orange">flex-end</font>
+				</h3>
+				<h5>flex direction :
+					<font color="orange">row</font>
+				</h5>
+				<iframe width="100%" height="500" frameborder="0" src="about:blank" class="react-native-web-player"></iframe>
+				<script type="text/jsx">
+				import React from 'react';
+				import { AppRegistry, View } from 'react-native';
+	
+				const Example = () => (
+					// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+					<View style={{
+						flex: 1,
+						flexDirection: 'row',
+						justifyContent: 'center',
+						alignItems: 'flex-end'
+					}}>
+						<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+						<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+						<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+					</View>
+				);
+	
+				AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
 			</section>
 
@@ -691,25 +619,21 @@
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 		
-					class AlignItemsBasics extends React.Component {
-						render() {
-							return (
-								// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
-								<View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'center',
-									alignItems: 'center'
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
+					const Example = () => (
+						// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'center',
+							alignItems: 'center'
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
 
-					AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
 			</section>
 
@@ -725,26 +649,22 @@
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 
-					class AlignItemsBasics extends React.Component {
-						render() {
-							return (
-								// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
-								// If you use stretch value in alignItems of parent, you must remove the width from properties
-								<View style={{
-									flex: 1,
-									flexDirection: 'row',
-									justifyContent: 'center',
-									alignItems: 'stretch'
-								}}>
-									<View style={{height: 50, backgroundColor: 'powderblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
+					const Example = () => (
+						// Try setting `alignItems` enum('flex-start', 'flex-end', 'center', 'stretch')
+						// If you use stretch value in alignItems of parent, you must remove the width from properties
+						<View style={{
+							flex: 1,
+							flexDirection: 'row',
+							justifyContent: 'center',
+							alignItems: 'stretch'
+						}}>
+							<View style={{height: 50, backgroundColor: 'powderblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
 
-					AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
 			</section>
 
@@ -757,27 +677,23 @@
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 
-					class AlignSelfBasics extends React.Component {
-						render() {
-							return (
-								// Try setting `alignSelf` enum('auto', 'flex-start', 'flex-end', 'center', 'stretch') #
-								<View style={{
-									flex: 1,
-									flexDirection: 'column',
-									justifyContent: 'center',
-									alignItems: 'center'
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue', alignSelf: 'auto'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'royalblue', alignSelf: 'flex-start'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue', alignSelf: 'flex-end'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'deepskyblue', alignSelf: 'center'}} />
-									<View style={{height: 50, backgroundColor: 'steelblue', alignSelf: 'stretch'}} />
-								</View>
-							);
-						}
-					};
+					const Example = () => (
+						// Try setting `alignSelf` enum('auto', 'flex-start', 'flex-end', 'center', 'stretch') #
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center'
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue', alignSelf: 'auto'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'royalblue', alignSelf: 'flex-start'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue', alignSelf: 'flex-end'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'deepskyblue', alignSelf: 'center'}} />
+							<View style={{height: 50, backgroundColor: 'steelblue', alignSelf: 'stretch'}} />
+						</View>
+					);
 
-					AppRegistry.registerComponent('AwesomeProject', () => AlignSelfBasics);
+					AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
 			</section>
 
@@ -790,26 +706,22 @@
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 
-					class Example extends React.Component {
-						render() {
-							return (
-								<View style={{
-									flex: 1,
-									flexDirection: 'column',
-									justifyContent: 'center',
-									alignItems: 'center'
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'powderblue', position: 'relative'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'pink', position: 'absolute'}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'red', position: 'absolute', left:20}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'green', position: 'absolute', right:25}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'orange', position: 'absolute', top:15, left:40}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'blue', position: 'absolute', bottom:15, right:40}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
-								</View>
-							);
-						}
-					};
+					const Example = () => (
+						<View style={{
+							flex: 1,
+							flexDirection: 'column',
+							justifyContent: 'center',
+							alignItems: 'center'
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'powderblue', position: 'relative'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'pink', position: 'absolute'}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'red', position: 'absolute', left:20}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'green', position: 'absolute', right:25}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'orange', position: 'absolute', top:15, left:40}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'blue', position: 'absolute', bottom:15, right:40}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'steelblue'}} />
+						</View>
+					);
 
 					AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
@@ -824,20 +736,16 @@
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 
-					class Example extends React.Component {
-						render() {
-							return (
-								<View style={{
-									flex: 1
-								}}>
-									<View style={{ width: 100, height: 100, backgroundColor: 'red', position: 'absolute', left: 30, top: 30 }}>
-										<View style={{ width: 50, height: 50, backgroundColor: 'pink', position: 'relative'}} />
-										<View style={{ width: 50, height: 50, backgroundColor: 'yellow', position: 'absolute', left: 30, top: 30}} />
-									</View>
-								</View>
-							);
-						}
-					};
+					const Example = () => (
+						<View style={{
+							flex: 1
+						}}>
+							<View style={{ width: 100, height: 100, backgroundColor: 'red', position: 'absolute', left: 30, top: 30 }}>
+								<View style={{ width: 50, height: 50, backgroundColor: 'pink', position: 'relative'}} />
+								<View style={{ width: 50, height: 50, backgroundColor: 'yellow', position: 'absolute', left: 30, top: 30}} />
+							</View>
+						</View>
+					);
 
 					AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
@@ -852,20 +760,16 @@
 					import React from 'react';
 					import { AppRegistry, View } from 'react-native';
 
-					class Example extends React.Component {
-						render() {
-							return (
-								<View style={{
-									flex: 1
-								}}>
-									<View style={{width: 50, height: 50, backgroundColor: 'pink', position: 'absolute', left: 30, top: 30}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'yellow', position: 'absolute', left: 60, top: 60, zIndex:1}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'skyblue', position: 'absolute', left: 90, top: 90}} />
-									<View style={{width: 50, height: 50, backgroundColor: 'green', position: 'absolute', left: 120, top: 120}}/>
-								</View>
-							);
-						}
-					};
+					const Example = () => (
+						<View style={{
+							flex: 1
+						}}>
+							<View style={{width: 50, height: 50, backgroundColor: 'pink', position: 'absolute', left: 30, top: 30}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'yellow', position: 'absolute', left: 60, top: 60, zIndex:1}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'skyblue', position: 'absolute', left: 90, top: 90}} />
+							<View style={{width: 50, height: 50, backgroundColor: 'green', position: 'absolute', left: 120, top: 120}}/>
+						</View>
+					);
 
 					AppRegistry.registerComponent('AwesomeProject', () => Example);
 				</script>
